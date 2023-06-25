@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guessing Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <h1>The Guessing Game</h1>
+    <div id="game-container">
+        <p>I'm thinking of a number between 1 and 100.</p>
+        <p>You have 7 attempts to guess the number.</p>
+        <p>Enter your guess:</p>
+        <input type="number" id="guess-input">
+        <button id="guess-button">Guess</button>
+        <p id="result"></p>
+        <p id="attempts"></p>
+        <p id="feedback"></p>
+        <p id="hint"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

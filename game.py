@@ -8,7 +8,7 @@ def guessing_game():
     history = []
     hot_cold_threshold = 10
 
-    print("Welcome to the Advanced Guessing Game!")
+    print("Welcome to the Guessing Game!")
     print(f"I'm thinking of a number between {lower_limit} and {upper_limit}.")
     print(f"You have 7 attempts to guess the number. Let's begin!")
 
